@@ -3,9 +3,10 @@ public class Person {
     private  String lastName;
     private double height;
 
-    public Person(String firstName, String lastName) {
+    public Person(String firstName, String lastName, double height) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.height = height;
     }
 
     public String getFirstName() {
@@ -16,7 +17,7 @@ public class Person {
         return lastName;
     }
 
-    private double getHeight(){
+    public double getHeight(){
         return height;
     }
 
@@ -28,7 +29,7 @@ public class Person {
         this.lastName = lastName;
     }
 
-    private void setHeight(double height){
+    public void setHeight(double height){
         this.height=height;
     }
 
